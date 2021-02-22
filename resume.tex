@@ -1,31 +1,34 @@
-\documentclass{article}
-
+\documentclass[12pt]{article}
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 \usepackage{titlesec}
-\usepackage[margin=.5in]{geometry}
+\usepackage[margin=.3in]{geometry}
 \usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{anyfontsize}
 
 \pagenumbering{gobble}
 \titleformat{\section}
-{\Large }
+{\fontsize{15}{10}\selectfont }
 {}
-{0em}
+{-1em}
 {}[\titlerule]
 \titlespacing{\section}
 {0em}{1em}{1em}
 
 
 \titleformat{\subsection}[runin]
-{\bfseries\large}
+{\bfseries\fontsize{13}{5}\selectfont}
 {}
 {0em}
 {}
 \titlespacing{\subsection}
-{0em}
-{1em}
+{.5em}
+{.5em}
 {0em}
 
 \titleformat{\subsubsection}[runin]
-{\bfseries}
+{\fontsize{12}{3}\selectfont}
 {}
 {2em}
 {}
@@ -38,16 +41,16 @@
 
 % ---------------------------- Title ----------------------------
 \begin{center}
-{\huge Andrew Fila}\\
-    \faEnvelope \hspace{.05in}andrew.m.fila@gmail.com\\
-    \faPhone \hspace{.05in} (517) 898-3884\\
-    \faGlobe \hspace{.05in} AndrewFila.github.io\\
-    \faMapMarker \hspace{.05in} 820 E. Sharon Ave. Houghton, MI, 49931
+    {\fontsize{40}{10}\selectfont Andrew {\bfseries Fila}}\\
+    \hspace{-1.5em}andrew.m.fila@gmail.com\hspace{.05in} $|$
+    (517) 898-3884\hspace{.05in} $|$
+    AndrewFila.github.io\hspace{.05in}
 \end{center}
 
 % ---------------------------- Summary ----------------------------
 \section{Summary}
-Motivated and committed forth year student looking to secure a 2021 summer internship to supplement a challenging Computer Science curriculum and to gain exposure to practical applications to assist in the exploration and refinement of a post graduate career path.
+Motivated and committed senior student looking to begin a career in computer science and software development starting summer 2021.
+
 
 
 % ---------------------------- Education ----------------------------
@@ -56,24 +59,22 @@ Motivated and committed forth year student looking to secure a 2021 summer inter
 
 B.S. Computer Science \hfill GPA: 2.60 / Departmental: 3.22
 
-Minor Psychology
+Minor Psychology, Mathematical Science
+%
+\subsection{Lansing Community College}\hfill
+%
+2016 -- 2017
 
-Minor Mathematical Science
-%
-%\subsection{Lansing Community College}\hfill
-%
-%2016 -- 2017 \hfill GPA: 3.35
 
 % ---------------------------- Technical Skills ----------------------------
 \section{Technical Experience \& Skills}
 \subsection{Website Development}\hfill
 
-$\bullet$ Designed a personal website using HTML, CSS, and JavaScript
+$\bullet$ Designed a personal website using HTML, CSS, and JavaScript.
 
-$\bullet$ Started collaboration with the MTU Concrete Canoe team to design a better and more responsive website
+$\bullet$ Started collaboration with the MTU Concrete Canoe team to design a better and more responsive website.
 
-
-\subsection{Team Software Project} \hfill
+\subsection{Team Software Project (Video Game)} \hfill
 
 $\bullet$ Worked in a four person team to design a video game using C\# and Unity.
 
@@ -83,48 +84,66 @@ $\bullet$ Worked as scrum master to help keep team organized and on schedule.
 
 \subsection{Technical Skills} \hfill
 
-\subsubsection{Programing}-- C, C++, C\#, Java, Assembly
-\subsubsection{Scripting}-- PHP, Bash, Python
-\subsubsection{Technologies}-- Linux, Git, HTML, SQL, CSS, LAMP stack, {\LaTeX}, Unity, Microsoft Office
+\begin{tabular}{l l}
+    {\bfseries Programming}   & C, C++, C\#, Java, Assembly \\
+    {\bfseries Scripting}     & PHP, Bash, Python, JavaScript  \\
+    {\bfseries Markup}        &  HTML, {\LaTeX}\\
+    {\bfseries Technologies}  &  Linux. Git, MySQL, CSS, Apache Server, Unity, Microsoft Office \\
+\end{tabular}\\
+
 
 % ---------------------------- Work Experience ----------------------------
 \section{Work Experience}
 
-\subsection{College Of Computer Science} -- Lab Assistant (Intro. to Programming 1/2) \hfill September 2020 -- Current
+\subsection{Website Developer}\hfill December 2020 -- Current
 
-$\bullet$ Helps students understand the basics of computer science and programing.
+$\bullet$ Worked with a startup to design a website to show products and give contact information
 
-$\bullet$ Helps introduce Java to students begining their programing and computer science education.
+$\bullet$ In the process of expanding the website to include an admin user and guest users as well as product information stored in a database.
 
-$\bullet$ Provides support to students expeienceing issues with their code and understanding of the material.
+$\bullet$ In the process of creating admin user functions to enable the website owner to update the database to change product and user info.
+
+$\bullet$ technologies used include MySQL, PHP, HTML, CSS, Apache Server
 
 
-\subsection{Michigan Technological University}-- Catering Server \hfill August 2019 -- April 2020
 
-$\bullet$ Provided professional, friendly, and engaging customer service.
 
-$\bullet$ Resolved guest issues efficiently.
+\subsection{College Of Computer Science} \hspace{.4em}-- Lab Assistant \hfill September 2020 -- Current
 
-$\bullet$ Maintained high standards of cleanliness and sanitation.
+$\bullet$ Works with the introductory computer science labs -- Introduction to Programming I/II
+
+$\bullet$ Helps students understand the basics of computer science and programming.
+
+$\bullet$ Helps introduce Java to students beginning their programming and computer science education.
+
+$\bullet$ Provides support to students experiencing issues with their code and understanding of the material.
+
+
+%\subsection{Michigan Technological University} -- Catering Server \hfill August 2019 -- April 2020
+%
+%$\bullet$ Provided professional, friendly, and engaging customer service.
+%
+%$\bullet$ Resolved guest issues efficiently.
+%
+%$\bullet$ Maintained high standards of cleanliness and sanitation.
 
 
 
 % ---------------------------- Extra Curricular ----------------------------
 \section{Honors \& Awards}
 
-$\bullet$ Eagle Scout \hfill December 2015
-
-$\bullet$ LCC Deans List \hfill Fall 2016
+$\bullet$ LCC Deans List \hfill
 
 
 % ---------------------------- ----------------------------
 \section{Extra Curricular}
 
+$\bullet$ MTU Concrete Canoe Website Manager
+
 $\bullet$ Ridge Roamers
 
-$\bullet$ Ski \& Snowboard Club
+%$\bullet$ Ski \& Snowboard Club
 
-$\bullet$ MTU Concrete Canoe Website Manager
 
 
 
