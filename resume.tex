@@ -2,19 +2,26 @@
 \usepackage[OT1]{fontenc}
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 \usepackage{titlesec}
-\usepackage[margin=.3in]{geometry}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\geometry{a4paper, top=.3in, bottom=.5in, right=.7in, left=.6in}
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \usepackage{anyfontsize}
+\usepackage{pifont}
+
 
 \pagenumbering{gobble}
 \titleformat{\section}
 {\fontsize{15}{10}\selectfont }
 {}
-{-1em}
+{0em}
 {}[\titlerule]
 \titlespacing{\section}
-{0em}{1em}{1em}
+{0em}
+{3em}
+{1em}
 
 
 \titleformat{\subsection}[runin]
@@ -23,9 +30,9 @@
 {0em}
 {}
 \titlespacing{\subsection}
-{.5em}
-{.5em}
 {0em}
+{3pt}
+{1em}
 
 \titleformat{\subsubsection}[runin]
 {\fontsize{12}{3}\selectfont}
@@ -36,7 +43,7 @@
 {0em}
 {0em}
 {0em}
-
+\usepackage{wasysym}
 \begin{document}
 
 % ---------------------------- Title ----------------------------
@@ -44,22 +51,20 @@
     {\fontsize{40}{10}\selectfont Andrew {\bfseries Fila}}\\
     \hspace{-1.5em}andrew.m.fila@gmail.com\hspace{.05in} $|$
     (517) 898-3884\hspace{.05in} $|$
-    AndrewFila.github.io\hspace{.05in}
+    \href{andrewfila.com}{andrewfila.com}\hspace{.05in}
 \end{center}
 
 % ---------------------------- Summary ----------------------------
-\section{Summary}
-Motivated and committed senior student looking to begin a career in computer science and software development starting summer 2021.
-
-
+\section{Profile}
+\hspace{1em} Experienced website developer, CS lab assistant tutor and Michigan Technological University graduate (Fall 2021) looking to utilize superior problem solving skills, communication skills, and knowledge of advanced programming techniques to help in the development of new application and technologies for an established technology company.
 
 % ---------------------------- Education ----------------------------
 \section{Education}
-\subsection{Michigan Technological University} \hfill Expected Graduation -- Summer 2021
+\subsection{Michigan Technological University} \hfill Expected Graduation -- Fall 2021
 
-B.S. Computer Science \hfill GPA: 2.60 / Departmental: 3.22
+B.S. Computer Science \hfill Departmental GPA: 3.22
 
-Minor Psychology, Mathematical Science
+m. Psychology%, Mathematical Science
 %
 \subsection{Lansing Community College}\hfill
 %
@@ -68,27 +73,32 @@ Minor Psychology, Mathematical Science
 
 % ---------------------------- Technical Skills ----------------------------
 \section{Technical Experience \& Skills}
+
 \subsection{Website Development}\hfill
-
-$\bullet$ Designed a personal website using HTML, CSS, and JavaScript.
-
-$\bullet$ Started collaboration with the MTU Concrete Canoe team to design a better and more responsive website.
-
+\begin{itemize}[label=\ding{118}]
+    \item Designed a personal website to gain creative first-hand design experience, develop targeted marketing materials for job search, and to help employers understand how I can contribute to their organizations success.
+    \item Collaborating with with the MTU Concrete Canoe team to design a better and more responsive website.
+    \item Technologies used include HTML, CSS, and JavaScript.
+\end{itemize}
 \subsection{Team Software Project (Video Game)} \hfill
+\begin{itemize}[label=\ding{118}]
+    \item Worked in a four person team to design a video game using C\# and Unity.
 
-$\bullet$ Worked in a four person team to design a video game using C\# and Unity.
+    \item Used a scrum development process to accomplish goals.
 
-$\bullet$ Used a scrum development process to accomplish goals.
+    \item Worked as scrum master to help keep team organized and on schedule.
+\end{itemize}
 
-$\bullet$ Worked as scrum master to help keep team organized and on schedule.
-
+\vspace{4pt}
 \subsection{Technical Skills} \hfill
 
+\vspace{5pt}
 \begin{tabular}{l l}
     {\bfseries Programming}   & C, C++, C\#, Java, Assembly \\
     {\bfseries Scripting}     & PHP, Bash, Python, JavaScript  \\
     {\bfseries Markup}        &  HTML, {\LaTeX}\\
-    {\bfseries Technologies}  &  Linux. Git, MySQL, CSS, Apache Server, Unity, Microsoft Office \\
+    {\bfseries Technologies}  & Junit testing, Linux, Git, MySQL, CSS, Apache Server, Unity, Microsoft Office \\
+
 \end{tabular}\\
 
 
@@ -96,28 +106,56 @@ $\bullet$ Worked as scrum master to help keep team organized and on schedule.
 \section{Work Experience}
 
 \subsection{Website Developer}\hfill December 2020 -- Current
+\begin{itemize}[label=\ding{118}]
+    \item  Designed a startup website to include product information and provide contact information to attract more users, conversions and to develop business.
 
-$\bullet$ Worked with a startup to design a website to show products and give contact information
+    \item Expanding startup website design to include admin user and guest user functionality and a product information database to increase efficacy in troubleshooting website issues, and ease administrative updates.
 
-$\bullet$ In the process of expanding the website to include an admin user and guest users as well as product information stored in a database.
-
-$\bullet$ In the process of creating admin user functions to enable the website owner to update the database to change product and user info.
-
-$\bullet$ technologies used include MySQL, PHP, HTML, CSS, Apache Server
-
+    \item technologies used include MySQL, PHP, HTML, CSS, Apache Server
+\end{itemize}
 
 
+\subsection{Lab Assistant} \hspace{-.5em}-- College of Computer Science \hfill September 2020 -- Current
 
-\subsection{College Of Computer Science} \hspace{.4em}-- Lab Assistant \hfill September 2020 -- Current
+\begin{itemize}[label=\ding{118}]
+    \item  Provides in-lab support and concept instruction for Introduction to Programming I/II
 
-$\bullet$ Works with the introductory computer science labs -- Introduction to Programming I/II
+    \item Increases freshman computer science students comprehension of the basics of computer science and programming.
 
-$\bullet$ Helps students understand the basics of computer science and programming.
+    \item Introduces Java to students beginning their programming and computer science education.
 
-$\bullet$ Helps introduce Java to students beginning their programming and computer science education.
+    \item Provides troubleshooting support to students experiencing coding issues and supplemental understanding of coursework material with hands-on, practical problem solving experiences.
 
-$\bullet$ Provides support to students experiencing issues with their code and understanding of the material.
+\end{itemize}
 
+
+\section{Professional Competencies}
+\begin{center}
+{\bfseries Analysis \& Problem Solving}
+
+Efficiency $|$ Learning by Doing $|$ Thoroughness $|$ Creativity
+    \vspace{1em}
+
+{\bfseries Interpersonal Skills}\hfill
+
+    Collaboration \& Team building $|$ Writing $|$ Managing Change \& Uncertainty
+    \vspace{1em}
+
+{\bfseries Management Skills}
+
+Project Management $|$ Decision Making
+    \vspace{1em}
+
+{\bfseries Advanced Competencies}
+
+Object-oriented programming methodologies $|$ Software development Methodologies
+
+Algorithm Design \& Analysis  $|$ Functional design $|$ Cognitive \& Social Psychology
+
+    Artificial Intelligence \& Machine Learning
+
+
+\end{center}
 
 %\subsection{Michigan Technological University} -- Catering Server \hfill August 2019 -- April 2020
 %
@@ -132,18 +170,18 @@ $\bullet$ Provides support to students experiencing issues with their code and u
 % ---------------------------- Extra Curricular ----------------------------
 \section{Honors \& Awards}
 
-$\bullet$ LCC Deans List \hfill
+\ding{118} LCC Deans List \hfill
 
 
 % ---------------------------- ----------------------------
 \section{Extra Curricular}
+\begin{itemize}[label=\ding{118}]
+\item MTU Concrete Canoe Website Manager
 
-$\bullet$ MTU Concrete Canoe Website Manager
+\item Ridge Roamers -- Official climbing club of MTU
+\item Ski \& Snowboard Club
 
-$\bullet$ Ridge Roamers
-
-%$\bullet$ Ski \& Snowboard Club
-
+\end{itemize}
 
 
 
